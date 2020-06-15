@@ -1,5 +1,5 @@
 // add the catsReducer
-const catsReducer = (state ={cats: [], loading: false}, action) => {
+const catsReducer = (state = {cats: [], loading: false}, action) => {
   switch(action.type) {
     case 'LOADING_CATS':
       return {...state, cats: [...state.cats], loading: true}
